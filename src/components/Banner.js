@@ -11,7 +11,7 @@ export const Banner = () => {
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
-  const [index, setIndex] = useState(1);
+  // const [index, setIndex] = useState(1);
   const toRotate = ["Full Stack Developer", "UI/UX Designer", "Freelancer"];
   const period = 2000;
 
@@ -23,7 +23,7 @@ export const Banner = () => {
     return () => {
       clearInterval(ticker);
     };
-  }, [text]);
+  }, [delta, text]);
 
   const tick = () => {
     let i = loopNum % toRotate.length;
