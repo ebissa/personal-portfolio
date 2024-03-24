@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import headerImg from "../assets/img/header-img.svg";
 import AstronountImg from "../assets/img/astrounount.png";
 
 import { ArrowRightCircle } from "react-bootstrap-icons";
