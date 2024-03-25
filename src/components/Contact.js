@@ -29,9 +29,12 @@ export const Contact = () => {
     setButtonText("Sending...");
 
     emailjs
-      .sendForm("service_lfjjd8j", "template_8d1gypk", e.target, {
-        publicKey: "chMIGpqjh-1uhU6jv",
-      })
+      .sendForm(
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+        e.target,
+        process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+      )
       .then(
         () => {
           setButtonText("Send");
