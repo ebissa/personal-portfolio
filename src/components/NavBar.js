@@ -76,7 +76,7 @@ export const NavBar = () => {
                 <a href="https://github.com/ebissa">
                   <img src={navIcon1} alt="" />
                 </a>
-                <a href="https://www.linkedin.com/in/ebissa-chemeda-b4b452244/">
+                <a href="">
                   <img src={navIcon2} alt="" />
                 </a>
                 <a href="https://www.instagram.com/ebissachemeda/">
